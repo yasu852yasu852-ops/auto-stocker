@@ -21,4 +21,3 @@ def test_inbound_auto_and_outbound_auto(client, mock_serial):
     r = client.get('/api/stock/state')
     arr = r.get_json()
     assert arr[0]['status'] == 'EMPTY'
-*** End Patch

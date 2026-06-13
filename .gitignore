@@ -4,3 +4,4 @@ __pycache__/
 .venv/
 instance/
 logs/
+tests/test_db.sqlite

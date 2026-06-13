@@ -21,4 +21,3 @@ def test_delete_product(client):
     assert resp.status_code == 201
     resp = client.delete('/api/products/DEL1')
     assert resp.status_code == 200
-*** End Patch

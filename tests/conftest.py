@@ -53,4 +53,3 @@ def mock_serial():
     # replace module instance
     serial_mod.serial_ctrl = m
     yield m
-*** End Patch
