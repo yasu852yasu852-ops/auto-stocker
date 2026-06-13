@@ -1,0 +1,5 @@
+body{font-family:Arial,Helvetica,sans-serif;background:#111;color:#eee;padding:16px}
+.shelves-grid{display:grid;grid-template-columns:repeat(8,1fr);gap:8px;margin:16px 0}
+.shelf{background:#222;padding:12px;border-radius:6px;text-align:center}
+.shelf.empty{border:2px dashed #555}
+.shelf.occupied{border:2px solid #4caf50}

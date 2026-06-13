@@ -1,0 +1,15 @@
+[Unit]
+Description=Auto-Stocker Gunicorn Service
+After=network.target
+
+[Service]
+User=www-data
+WorkingDirectory=/opt/auto-stocker
+Environment=PATH=/opt/auto-stocker/.venv/bin
+ExecStart=/opt/auto-stocker/.venv/bin/gunicorn -w 3 -b 127.0.0.1:8000 app:app
+Restart=always
+RestartSec=5
+LimitNOFILE=65536
+
+[Install]
+WantedBy=multi-user.target
